@@ -1,0 +1,469 @@
+<html>
+<link rel="stylesheet" href="styles/style.css">
+<body>
+    <div class="escritura">
+        <input type="text" class="texto" readonly>
+    </div>
+    <div class="keyboard">
+        <div class="keyboard1">
+            <div class="letras q">
+                <h1>
+                    q
+                </h1>
+            </div>
+            <div class="letras w">
+                <h1>
+                    w
+                </h1>
+            </div>
+            <div class="letras e">
+                <h1>
+                    e
+                </h1>
+            </div>
+            <div class="letras r">
+                <h1>
+                    r
+                </h1>
+            </div>
+            <div class="letras t">
+                <h1>
+                    t
+                </h1>
+            </div>
+            <div class="letras y">
+                <h1>
+                    y
+                </h1>
+            </div>
+            <div class="letras u">
+                <h1>
+                    u
+                </h1>
+            </div>
+            <div class="letras i">
+                <h1>
+                    i
+                </h1>
+            </div>
+            <div class="letras o">
+                <h1>
+                    o
+                </h1>
+            </div>
+            <div class="letras p">
+                <h1>
+                    p
+                </h1>
+            </div>
+            <div class="letras backspace">
+                <h1>
+                    ←
+                </h1>
+            </div>
+        </div>
+        <div class="keyboard2">
+            <div class="letras a">
+                <h1>
+                    a
+                </h1>
+            </div>
+            <div class="letras s">
+                <h1>
+                    s
+                </h1>
+            </div>
+            <div class="letras d">
+                <h1>
+                    d
+                </h1>
+            </div>
+            <div class="letras f">
+                <h1>
+                    f
+                </h1>
+            </div>
+            <div class="letras g">
+                <h1>
+                    g
+                </h1>
+            </div>
+            <div class="letras h">
+                <h1>
+                    h
+                </h1>
+            </div>
+            <div class="letras j">
+                <h1>
+                    j
+                </h1>
+            </div>
+            <div class="letras k">
+                <h1>
+                    k
+                </h1>
+            </div>
+            <div class="letras l">
+                <h1>
+                    l
+                </h1>
+            </div>
+            <div class="letras ñ">
+                <h1>
+                    ñ
+                </h1>
+            </div>
+        </div>
+        <!-- tercera fila -->
+        <div class="keyboard3">
+            <div class="letras z">
+                <h1>
+                    z
+                </h1>
+            </div>
+            <div class="letras x">
+                <h1>
+                    x
+                </h1>
+            </div>
+            <div class="letras c">
+                <h1>
+                    c
+                </h1>
+            </div>
+            <div class="letras v">
+                <h1>
+                    v
+                </h1>
+            </div>
+            <div class="letras b">
+                <h1>
+                    b
+                </h1>
+            </div>
+            <div class="letras n">
+                <h1>
+                    n
+                </h1>
+            </div>
+            <div class="letras m">
+                <h1>
+                    m
+                </h1>
+            </div>
+            <div class="letras coma">
+                <h1>
+                    ,
+                </h1>
+            </div>
+            <div class="letras punto">
+                <h1>
+                    .
+                </h1>
+            </div>
+            <div class="letras guion">
+                <h1>
+                    -
+                </h1>
+            </div>
+        </div>
+        <div class="letras space">
+        </div>
+    </div>
+</body>
+<script>
+    //primera fila
+    const q = document.querySelector(".q");
+    const w = document.querySelector(".w");
+    const e = document.querySelector(".e");
+    const r = document.querySelector(".r");
+    const t = document.querySelector(".t");
+    const y = document.querySelector(".y");
+    const u = document.querySelector(".u");
+    const i = document.querySelector(".i");
+    const o = document.querySelector(".o");
+    const p = document.querySelector(".p");
+    //segunda fila
+    const a = document.querySelector(".a");
+    const s = document.querySelector(".s");
+    const d = document.querySelector(".d");
+    const f = document.querySelector(".f");
+    const g = document.querySelector(".g");
+    const h = document.querySelector(".h");
+    const j = document.querySelector(".j");
+    const k = document.querySelector(".k");
+    const l = document.querySelector(".l");
+    const ñ = document.querySelector(".ñ");
+
+    //tercera fila
+    const z = document.querySelector(".z");
+    const x = document.querySelector(".x");
+    const c = document.querySelector(".c");
+    const v = document.querySelector(".v");
+    const b = document.querySelector(".b");
+    const n = document.querySelector(".n");
+    const m = document.querySelector(".m");
+    const coma = document.querySelector(".coma");
+    const punto = document.querySelector(".punto");
+    const guion = document.querySelector(".guion");
+    const space = document.querySelector(".space");
+
+
+    const back = document.querySelector(".backspace");
+    const h1 = document.querySelector('h1');
+    const input = document.querySelector(".texto");
+
+    document.addEventListener('keydown', function (event) {
+        if (event.key == "q") {
+            q.style.color = randomColor();
+            input.value += "q";
+        }
+        else if (event.key == "w") {
+            w.style.color = randomColor();
+            input.value += "w";
+        }
+        else if (event.key == "e") {
+            e.style.color = randomColor();
+            input.value += "e";
+        }
+        else if (event.key == "r") {
+            r.style.color = randomColor();
+            input.value += "r";
+        }
+        else if (event.key == "t") {
+            t.style.color = randomColor();
+            input.value += "t";
+        }
+        else if (event.key == "y") {
+            y.style.color = randomColor();
+            input.value += "y";
+        }
+        else if (event.key == "u") {
+            u.style.color = randomColor();
+            input.value += "u";
+        }
+        else if (event.key == "i") {
+            i.style.color = randomColor();
+            input.value += "i";
+        }
+        else if (event.key == "o") {
+            o.style.color = randomColor();
+            input.value += "o";
+        }
+        else if (event.key == "p") {
+            p.style.color = randomColor();
+            input.value += "p";
+        }
+
+        else if (event.key == "Backspace") {
+            back.style.color = randomColor();
+            input.value = borrar();
+        }
+
+
+        //linea 2
+        else if (event.key == "a") {
+            a.style.color = randomColor();
+            input.value += "a";
+        }
+        else if (event.key == "s") {
+            s.style.color = randomColor();
+            input.value += "s";
+        }
+        else if (event.key == "d") {
+            d.style.color = randomColor();
+            input.value += "d";
+        }
+        else if (event.key == "f") {
+            f.style.color = randomColor();
+            input.value += "f";
+        }
+        else if (event.key == "g") {
+            g.style.color = randomColor();
+            input.value += "g";
+        }
+        else if (event.key == "h") {
+            h.style.color = randomColor();
+            input.value += "h";
+        }
+        else if (event.key == "j") {
+            j.style.color = randomColor();
+            input.value += "j";
+        }
+        else if (event.key == "k") {
+            k.style.color = randomColor();
+            input.value += "k";
+        }
+        else if (event.key == "l") {
+            l.style.color = randomColor();
+            input.value += "l";
+        }
+        else if (event.key == "ñ") {
+            ñ.style.color = randomColor();
+            input.value += "ñ";
+        }
+
+        //linea 3
+        else if (event.key == "z") {
+            z.style.color = randomColor();
+            input.value += "z";
+        }
+        else if (event.key == "x") {
+            x.style.color = randomColor();
+            input.value += "x";
+        }
+        else if (event.key == "c") {
+            c.style.color = randomColor();
+            input.value += "c";
+        }
+        else if (event.key == "v") {
+            v.style.color = randomColor();
+            input.value += "v";
+        }
+        else if (event.key == "b") {
+            b.style.color = randomColor();
+            input.value += "b";
+        }
+        else if (event.key == "n") {
+            n.style.color = randomColor();
+            input.value += "n";
+        }
+        else if (event.key == "m") {
+            m.style.color = randomColor();
+            input.value += "m";
+        }
+        else if (event.key == ",") {
+            coma.style.color = randomColor();
+            input.value += ",";
+        }
+        else if (event.key == ".") {
+            punto.style.color = randomColor();
+            input.value += ".";
+        }
+        else if (event.key == "-") {
+            guion.style.color = randomColor();
+            input.value += "-";
+        } else if (event.code == "Space") {
+            space.style.color = randomColor();
+            input.value += " "
+        }
+    })
+
+    document.addEventListener('keyup', function (event) {
+        if (event.key == "q") {
+            q.style.color = "white"
+        }
+        else if (event.key == "w") {
+            w.style.color = "white"
+        }
+        else if (event.key == "e") {
+            e.style.color = "white"
+        }
+        else if (event.key == "r") {
+            r.style.color = "white"
+        }
+        else if (event.key == "t") {
+            t.style.color = "white"
+        }
+        else if (event.key == "y") {
+            y.style.color = "white"
+        }
+        else if (event.key == "u") {
+            u.style.color = "white"
+        }
+        else if (event.key == "i") {
+            i.style.color = "white"
+        }
+        else if (event.key == "o") {
+            o.style.color = "white"
+        }
+        else if (event.key == "p") {
+            p.style.color = "white"
+        }
+
+        else if (event.key == "Backspace") {
+            back.style.color = "white"
+        }
+
+        //linea 2
+
+        else if (event.key == "a") {
+            a.style.color = "white"
+        }
+        else if (event.key == "s") {
+            s.style.color = "white"
+        }
+        else if (event.key == "d") {
+            d.style.color = "white"
+        }
+        else if (event.key == "f") {
+            f.style.color = "white"
+        }
+        else if (event.key == "g") {
+            g.style.color = "white"
+        }
+        else if (event.key == "h") {
+            h.style.color = "white"
+        }
+        else if (event.key == "j") {
+            j.style.color = "white"
+        }
+        else if (event.key == "k") {
+            k.style.color = "white"
+        }
+        else if (event.key == "l") {
+            l.style.color = "white"
+        }
+        else if (event.key == "ñ") {
+            ñ.style.color = "white"
+        }
+
+
+        //linea 3
+        else if (event.key == "z") {
+            z.style.color = "white"
+        }
+        else if (event.key == "x") {
+            x.style.color = "white"
+        }
+        else if (event.key == "c") {
+            c.style.color = "white"
+        }
+        else if (event.key == "v") {
+            v.style.color = "white"
+        }
+        else if (event.key == "b") {
+            b.style.color = "white"
+        }
+        else if (event.key == "n") {
+            n.style.color = "white"
+        }
+        else if (event.key == "m") {
+            m.style.color = "white"
+        }
+        else if (event.key == ",") {
+            coma.style.color = "white"
+        }
+        else if (event.key == ".") {
+            punto.style.color = "white"
+        }
+        else if (event.key == "-") {
+            guion.style.color = "white"
+        } else if (event.code == "Space") {
+            space.style.color = "white";
+        }
+    })
+
+    function borrar() {
+        let texto = input.value;
+        texto = texto.substring(0, texto.length - 1);
+        return texto;
+    }
+
+    function randomColor() {
+        var o = Math.round, r = Math.random, s = 255;
+        return 'rgba(' + o(r() * s) + ',' + o(r() * s) + ',' + o(r() * s) + ',' + r().toFixed(1) + ')';
+    }
+</script>
+
+</html>
